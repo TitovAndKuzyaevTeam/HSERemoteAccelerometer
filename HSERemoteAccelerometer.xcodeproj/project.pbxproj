@@ -1,0 +1,887 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22A5F220F937220E33DCAAAA /* Pods_HSERemoteAccelerometerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF5E8DD3CECB4265D1580CD /* Pods_HSERemoteAccelerometerTests.framework */; };
+		283921561EFD6CBD00C6D73D /* TimeSeriesModelsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283921551EFD6CBD00C6D73D /* TimeSeriesModelsStorage.swift */; };
+		28BAAE7F1EEE8BB800D4A887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAAE7E1EEE8BB800D4A887 /* AppDelegate.swift */; };
+		28BAAE841EEE8BB800D4A887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BAAE821EEE8BB800D4A887 /* Main.storyboard */; };
+		28BAAE861EEE8BB800D4A887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28BAAE851EEE8BB800D4A887 /* Assets.xcassets */; };
+		28BAAE891EEE8BB800D4A887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BAAE871EEE8BB800D4A887 /* LaunchScreen.storyboard */; };
+		28BAAE941EEE8BB900D4A887 /* HSERemoteAccelerometerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAAE931EEE8BB900D4A887 /* HSERemoteAccelerometerTests.swift */; };
+		28BAAE9F1EEE8BB900D4A887 /* HSERemoteAccelerometerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAAE9E1EEE8BB900D4A887 /* HSERemoteAccelerometerUITests.swift */; };
+		28BAAEB21EEE8D8300D4A887 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAAEB11EEE8D8300D4A887 /* Router.swift */; };
+		28BAAEB41EEE8D9600D4A887 /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAAEB31EEE8D9600D4A887 /* StoryboardHelper.swift */; };
+		28BAAEB91EEE910A00D4A887 /* AccelerometerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAAEB81EEE910A00D4A887 /* AccelerometerVC.swift */; };
+		28BAAEBB1EEE912600D4A887 /* AccelerometerScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAAEBA1EEE912600D4A887 /* AccelerometerScreenVM.swift */; };
+		28BAAEBD1EEEA99500D4A887 /* MainTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAAEBC1EEEA99500D4A887 /* MainTVC.swift */; };
+		28BAAEC11EEEBAF200D4A887 /* ConnectionPropertyEditingAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAAEC01EEEBAF200D4A887 /* ConnectionPropertyEditingAlertView.swift */; };
+		28BAAEC31EEEC45300D4A887 /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAAEC21EEEC45300D4A887 /* AlertButton.swift */; };
+		28BAAEC51EEEE78D00D4A887 /* MainScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAAEC41EEEE78D00D4A887 /* MainScreenVM.swift */; };
+		28BAAEC81EEEE7FE00D4A887 /* DataManagerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAAEC71EEEE7FE00D4A887 /* DataManagerAPI.swift */; };
+		28BAAECA1EEEE81800D4A887 /* FileSystemIteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAAEC91EEEE81800D4A887 /* FileSystemIteractor.swift */; };
+		28BAAECC1EEEE84700D4A887 /* DataLayersProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAAECB1EEEE84700D4A887 /* DataLayersProtocols.swift */; };
+		28BAAECF1EEEE8AA00D4A887 /* ConnectionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAAECE1EEEE8AA00D4A887 /* ConnectionInfo.swift */; };
+		28BAAED51EF2B3B900D4A887 /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAAED41EF2B3B900D4A887 /* GlobalState.swift */; };
+		47D09D681EF2937C0036841D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D09D671EF2937C0036841D /* NetworkManager.swift */; };
+		47D09D6A1EF2D9580036841D /* TimeSeriesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D09D691EF2D9580036841D /* TimeSeriesDataModel.swift */; };
+		D8D8D6FD791D7747AF8BD5F5 /* Pods_HSERemoteAccelerometer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2B9C615E68BC58816ECF49 /* Pods_HSERemoteAccelerometer.framework */; };
+		F927CD1F9DA39CF7724E7C46 /* Pods_HSERemoteAccelerometerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E30362C32274DA7DFE74AE4 /* Pods_HSERemoteAccelerometerUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28BAAE901EEE8BB900D4A887 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28BAAE731EEE8BB800D4A887 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28BAAE7A1EEE8BB800D4A887;
+			remoteInfo = HSERemoteAccelerometer;
+		};
+		28BAAE9B1EEE8BB900D4A887 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28BAAE731EEE8BB800D4A887 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28BAAE7A1EEE8BB800D4A887;
+			remoteInfo = HSERemoteAccelerometer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04A914EBFC02582AEB46297B /* Pods-HSERemoteAccelerometer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSERemoteAccelerometer.release.xcconfig"; path = "Pods/Target Support Files/Pods-HSERemoteAccelerometer/Pods-HSERemoteAccelerometer.release.xcconfig"; sourceTree = "<group>"; };
+		1247BDD6C8ED8A945537FCD5 /* Pods-HSERemoteAccelerometerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSERemoteAccelerometerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HSERemoteAccelerometerUITests/Pods-HSERemoteAccelerometerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1673889D0598C7F7D3F17B62 /* Pods-HSERemoteAccelerometerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSERemoteAccelerometerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HSERemoteAccelerometerTests/Pods-HSERemoteAccelerometerTests.release.xcconfig"; sourceTree = "<group>"; };
+		1D2B9C615E68BC58816ECF49 /* Pods_HSERemoteAccelerometer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSERemoteAccelerometer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		283921551EFD6CBD00C6D73D /* TimeSeriesModelsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSeriesModelsStorage.swift; sourceTree = "<group>"; };
+		28BAAE7B1EEE8BB800D4A887 /* HSERemoteAccelerometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSERemoteAccelerometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28BAAE7E1EEE8BB800D4A887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28BAAE831EEE8BB800D4A887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28BAAE851EEE8BB800D4A887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28BAAE881EEE8BB800D4A887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28BAAE8A1EEE8BB800D4A887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28BAAE8F1EEE8BB900D4A887 /* HSERemoteAccelerometerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSERemoteAccelerometerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28BAAE931EEE8BB900D4A887 /* HSERemoteAccelerometerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSERemoteAccelerometerTests.swift; sourceTree = "<group>"; };
+		28BAAE951EEE8BB900D4A887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28BAAE9A1EEE8BB900D4A887 /* HSERemoteAccelerometerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSERemoteAccelerometerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28BAAE9E1EEE8BB900D4A887 /* HSERemoteAccelerometerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSERemoteAccelerometerUITests.swift; sourceTree = "<group>"; };
+		28BAAEA01EEE8BB900D4A887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28BAAEB11EEE8D8300D4A887 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		28BAAEB31EEE8D9600D4A887 /* StoryboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
+		28BAAEB51EEE90BE00D4A887 /* HSERemoteAccelerometer-Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HSERemoteAccelerometer-Bridging-header.h"; sourceTree = "<group>"; };
+		28BAAEB81EEE910A00D4A887 /* AccelerometerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerometerVC.swift; sourceTree = "<group>"; };
+		28BAAEBA1EEE912600D4A887 /* AccelerometerScreenVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerometerScreenVM.swift; sourceTree = "<group>"; };
+		28BAAEBC1EEEA99500D4A887 /* MainTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTVC.swift; sourceTree = "<group>"; };
+		28BAAEC01EEEBAF200D4A887 /* ConnectionPropertyEditingAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionPropertyEditingAlertView.swift; sourceTree = "<group>"; };
+		28BAAEC21EEEC45300D4A887 /* AlertButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
+		28BAAEC41EEEE78D00D4A887 /* MainScreenVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenVM.swift; sourceTree = "<group>"; };
+		28BAAEC71EEEE7FE00D4A887 /* DataManagerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerAPI.swift; sourceTree = "<group>"; };
+		28BAAEC91EEEE81800D4A887 /* FileSystemIteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSystemIteractor.swift; sourceTree = "<group>"; };
+		28BAAECB1EEEE84700D4A887 /* DataLayersProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLayersProtocols.swift; sourceTree = "<group>"; };
+		28BAAECE1EEEE8AA00D4A887 /* ConnectionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionInfo.swift; sourceTree = "<group>"; };
+		28BAAED41EF2B3B900D4A887 /* GlobalState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalState.swift; sourceTree = "<group>"; };
+		47D09D671EF2937C0036841D /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		47D09D691EF2D9580036841D /* TimeSeriesDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSeriesDataModel.swift; sourceTree = "<group>"; };
+		4E30362C32274DA7DFE74AE4 /* Pods_HSERemoteAccelerometerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSERemoteAccelerometerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58D50A624F329C09FC85C3AB /* Pods-HSERemoteAccelerometer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSERemoteAccelerometer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HSERemoteAccelerometer/Pods-HSERemoteAccelerometer.debug.xcconfig"; sourceTree = "<group>"; };
+		7E4D7E18716F267E992FE5FE /* Pods-HSERemoteAccelerometerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSERemoteAccelerometerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HSERemoteAccelerometerTests/Pods-HSERemoteAccelerometerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		94A78F2A2FE3DFCEFACBB77C /* Pods-HSERemoteAccelerometerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSERemoteAccelerometerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HSERemoteAccelerometerUITests/Pods-HSERemoteAccelerometerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CF5E8DD3CECB4265D1580CD /* Pods_HSERemoteAccelerometerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSERemoteAccelerometerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28BAAE781EEE8BB800D4A887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D8D6FD791D7747AF8BD5F5 /* Pods_HSERemoteAccelerometer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28BAAE8C1EEE8BB900D4A887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A5F220F937220E33DCAAAA /* Pods_HSERemoteAccelerometerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28BAAE971EEE8BB900D4A887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F927CD1F9DA39CF7724E7C46 /* Pods_HSERemoteAccelerometerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05C587915A4A92EA7915A7C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D2B9C615E68BC58816ECF49 /* Pods_HSERemoteAccelerometer.framework */,
+				9CF5E8DD3CECB4265D1580CD /* Pods_HSERemoteAccelerometerTests.framework */,
+				4E30362C32274DA7DFE74AE4 /* Pods_HSERemoteAccelerometerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22FA90D3C6A19BFFAE33A55B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58D50A624F329C09FC85C3AB /* Pods-HSERemoteAccelerometer.debug.xcconfig */,
+				04A914EBFC02582AEB46297B /* Pods-HSERemoteAccelerometer.release.xcconfig */,
+				7E4D7E18716F267E992FE5FE /* Pods-HSERemoteAccelerometerTests.debug.xcconfig */,
+				1673889D0598C7F7D3F17B62 /* Pods-HSERemoteAccelerometerTests.release.xcconfig */,
+				94A78F2A2FE3DFCEFACBB77C /* Pods-HSERemoteAccelerometerUITests.debug.xcconfig */,
+				1247BDD6C8ED8A945537FCD5 /* Pods-HSERemoteAccelerometerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		281855E71EF98B3D00620034 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28BAAE851EEE8BB800D4A887 /* Assets.xcassets */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		28BAAE721EEE8BB800D4A887 = {
+			isa = PBXGroup;
+			children = (
+				28BAAE7D1EEE8BB800D4A887 /* HSERemoteAccelerometer */,
+				28BAAE921EEE8BB900D4A887 /* HSERemoteAccelerometerTests */,
+				28BAAE9D1EEE8BB900D4A887 /* HSERemoteAccelerometerUITests */,
+				28BAAE7C1EEE8BB800D4A887 /* Products */,
+				22FA90D3C6A19BFFAE33A55B /* Pods */,
+				05C587915A4A92EA7915A7C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28BAAE7C1EEE8BB800D4A887 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28BAAE7B1EEE8BB800D4A887 /* HSERemoteAccelerometer.app */,
+				28BAAE8F1EEE8BB900D4A887 /* HSERemoteAccelerometerTests.xctest */,
+				28BAAE9A1EEE8BB900D4A887 /* HSERemoteAccelerometerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28BAAE7D1EEE8BB800D4A887 /* HSERemoteAccelerometer */ = {
+			isa = PBXGroup;
+			children = (
+				28BAAEB51EEE90BE00D4A887 /* HSERemoteAccelerometer-Bridging-header.h */,
+				28BAAED31EF2B39800D4A887 /* BusinessLogicLayer */,
+				28BAAEC61EEEE7CE00D4A887 /* DataLayer */,
+				28BAAEAC1EEE8CD800D4A887 /* PresentationLayer */,
+				28BAAE7E1EEE8BB800D4A887 /* AppDelegate.swift */,
+				28BAAE821EEE8BB800D4A887 /* Main.storyboard */,
+				28BAAE871EEE8BB800D4A887 /* LaunchScreen.storyboard */,
+				28BAAE8A1EEE8BB800D4A887 /* Info.plist */,
+				281855E71EF98B3D00620034 /* Sources */,
+			);
+			path = HSERemoteAccelerometer;
+			sourceTree = "<group>";
+		};
+		28BAAE921EEE8BB900D4A887 /* HSERemoteAccelerometerTests */ = {
+			isa = PBXGroup;
+			children = (
+				28BAAE931EEE8BB900D4A887 /* HSERemoteAccelerometerTests.swift */,
+				28BAAE951EEE8BB900D4A887 /* Info.plist */,
+			);
+			path = HSERemoteAccelerometerTests;
+			sourceTree = "<group>";
+		};
+		28BAAE9D1EEE8BB900D4A887 /* HSERemoteAccelerometerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28BAAE9E1EEE8BB900D4A887 /* HSERemoteAccelerometerUITests.swift */,
+				28BAAEA01EEE8BB900D4A887 /* Info.plist */,
+			);
+			path = HSERemoteAccelerometerUITests;
+			sourceTree = "<group>";
+		};
+		28BAAEAC1EEE8CD800D4A887 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				28BAAEBF1EEEBAAD00D4A887 /* Views */,
+				28BAAEB01EEE8D7900D4A887 /* Helpers */,
+				28BAAEAF1EEE8D6F00D4A887 /* Screens */,
+			);
+			name = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		28BAAEAF1EEE8D6F00D4A887 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				28BAAEB61EEE90EC00D4A887 /* Main */,
+				28BAAEB71EEE90F200D4A887 /* Accelerometer */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		28BAAEB01EEE8D7900D4A887 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				28BAAEB11EEE8D8300D4A887 /* Router.swift */,
+				28BAAEB31EEE8D9600D4A887 /* StoryboardHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		28BAAEB61EEE90EC00D4A887 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				28BAAEBC1EEEA99500D4A887 /* MainTVC.swift */,
+				28BAAEC41EEEE78D00D4A887 /* MainScreenVM.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		28BAAEB71EEE90F200D4A887 /* Accelerometer */ = {
+			isa = PBXGroup;
+			children = (
+				28BAAEB81EEE910A00D4A887 /* AccelerometerVC.swift */,
+				28BAAEBA1EEE912600D4A887 /* AccelerometerScreenVM.swift */,
+			);
+			name = Accelerometer;
+			sourceTree = "<group>";
+		};
+		28BAAEBE1EEEBAA700D4A887 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				28BAAEC01EEEBAF200D4A887 /* ConnectionPropertyEditingAlertView.swift */,
+				28BAAEC21EEEC45300D4A887 /* AlertButton.swift */,
+			);
+			name = Alerts;
+			sourceTree = "<group>";
+		};
+		28BAAEBF1EEEBAAD00D4A887 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28BAAEBE1EEEBAA700D4A887 /* Alerts */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		28BAAEC61EEEE7CE00D4A887 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				47D09D671EF2937C0036841D /* NetworkManager.swift */,
+				28BAAECD1EEEE89000D4A887 /* Models */,
+				28BAAEC71EEEE7FE00D4A887 /* DataManagerAPI.swift */,
+				28BAAEC91EEEE81800D4A887 /* FileSystemIteractor.swift */,
+				28BAAECB1EEEE84700D4A887 /* DataLayersProtocols.swift */,
+				283921551EFD6CBD00C6D73D /* TimeSeriesModelsStorage.swift */,
+			);
+			name = DataLayer;
+			sourceTree = "<group>";
+		};
+		28BAAECD1EEEE89000D4A887 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28BAAECE1EEEE8AA00D4A887 /* ConnectionInfo.swift */,
+				47D09D691EF2D9580036841D /* TimeSeriesDataModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		28BAAED31EF2B39800D4A887 /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				28BAAED41EF2B3B900D4A887 /* GlobalState.swift */,
+			);
+			name = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28BAAE7A1EEE8BB800D4A887 /* HSERemoteAccelerometer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28BAAEA31EEE8BB900D4A887 /* Build configuration list for PBXNativeTarget "HSERemoteAccelerometer" */;
+			buildPhases = (
+				BF2967D4E7BA25C0E4B53CF2 /* [CP] Check Pods Manifest.lock */,
+				28BAAE771EEE8BB800D4A887 /* Sources */,
+				28BAAE781EEE8BB800D4A887 /* Frameworks */,
+				28BAAE791EEE8BB800D4A887 /* Resources */,
+				AE81062E3D676D0582459FD3 /* [CP] Embed Pods Frameworks */,
+				EB015A246F5AB14CCAE2C0D1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HSERemoteAccelerometer;
+			productName = HSERemoteAccelerometer;
+			productReference = 28BAAE7B1EEE8BB800D4A887 /* HSERemoteAccelerometer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28BAAE8E1EEE8BB900D4A887 /* HSERemoteAccelerometerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28BAAEA61EEE8BB900D4A887 /* Build configuration list for PBXNativeTarget "HSERemoteAccelerometerTests" */;
+			buildPhases = (
+				F148494EBE4FD08630B2C388 /* [CP] Check Pods Manifest.lock */,
+				28BAAE8B1EEE8BB900D4A887 /* Sources */,
+				28BAAE8C1EEE8BB900D4A887 /* Frameworks */,
+				28BAAE8D1EEE8BB900D4A887 /* Resources */,
+				220755506C40B2033366DE8B /* [CP] Embed Pods Frameworks */,
+				7739C264BEF26C6AFA5B5CDD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28BAAE911EEE8BB900D4A887 /* PBXTargetDependency */,
+			);
+			name = HSERemoteAccelerometerTests;
+			productName = HSERemoteAccelerometerTests;
+			productReference = 28BAAE8F1EEE8BB900D4A887 /* HSERemoteAccelerometerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28BAAE991EEE8BB900D4A887 /* HSERemoteAccelerometerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28BAAEA91EEE8BB900D4A887 /* Build configuration list for PBXNativeTarget "HSERemoteAccelerometerUITests" */;
+			buildPhases = (
+				C1DEB0976273990D91F42FF4 /* [CP] Check Pods Manifest.lock */,
+				28BAAE961EEE8BB900D4A887 /* Sources */,
+				28BAAE971EEE8BB900D4A887 /* Frameworks */,
+				28BAAE981EEE8BB900D4A887 /* Resources */,
+				21DEF3C1F80D56DA92646E57 /* [CP] Embed Pods Frameworks */,
+				A5F366602D78200ADC94179B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28BAAE9C1EEE8BB900D4A887 /* PBXTargetDependency */,
+			);
+			name = HSERemoteAccelerometerUITests;
+			productName = HSERemoteAccelerometerUITests;
+			productReference = 28BAAE9A1EEE8BB900D4A887 /* HSERemoteAccelerometerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28BAAE731EEE8BB800D4A887 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Dmitriy Titov";
+				TargetAttributes = {
+					28BAAE7A1EEE8BB800D4A887 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CW4GWQZXWG;
+						ProvisioningStyle = Automatic;
+					};
+					28BAAE8E1EEE8BB900D4A887 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CW4GWQZXWG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 28BAAE7A1EEE8BB800D4A887;
+					};
+					28BAAE991EEE8BB900D4A887 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CW4GWQZXWG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 28BAAE7A1EEE8BB800D4A887;
+					};
+				};
+			};
+			buildConfigurationList = 28BAAE761EEE8BB800D4A887 /* Build configuration list for PBXProject "HSERemoteAccelerometer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28BAAE721EEE8BB800D4A887;
+			productRefGroup = 28BAAE7C1EEE8BB800D4A887 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28BAAE7A1EEE8BB800D4A887 /* HSERemoteAccelerometer */,
+				28BAAE8E1EEE8BB900D4A887 /* HSERemoteAccelerometerTests */,
+				28BAAE991EEE8BB900D4A887 /* HSERemoteAccelerometerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28BAAE791EEE8BB800D4A887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28BAAE891EEE8BB800D4A887 /* LaunchScreen.storyboard in Resources */,
+				28BAAE861EEE8BB800D4A887 /* Assets.xcassets in Resources */,
+				28BAAE841EEE8BB800D4A887 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28BAAE8D1EEE8BB900D4A887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28BAAE981EEE8BB900D4A887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21DEF3C1F80D56DA92646E57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HSERemoteAccelerometerUITests/Pods-HSERemoteAccelerometerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		220755506C40B2033366DE8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HSERemoteAccelerometerTests/Pods-HSERemoteAccelerometerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7739C264BEF26C6AFA5B5CDD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HSERemoteAccelerometerTests/Pods-HSERemoteAccelerometerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5F366602D78200ADC94179B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HSERemoteAccelerometerUITests/Pods-HSERemoteAccelerometerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE81062E3D676D0582459FD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HSERemoteAccelerometer/Pods-HSERemoteAccelerometer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF2967D4E7BA25C0E4B53CF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1DEB0976273990D91F42FF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB015A246F5AB14CCAE2C0D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HSERemoteAccelerometer/Pods-HSERemoteAccelerometer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F148494EBE4FD08630B2C388 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28BAAE771EEE8BB800D4A887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28BAAEC31EEEC45300D4A887 /* AlertButton.swift in Sources */,
+				28BAAE7F1EEE8BB800D4A887 /* AppDelegate.swift in Sources */,
+				28BAAEC51EEEE78D00D4A887 /* MainScreenVM.swift in Sources */,
+				47D09D6A1EF2D9580036841D /* TimeSeriesDataModel.swift in Sources */,
+				28BAAECC1EEEE84700D4A887 /* DataLayersProtocols.swift in Sources */,
+				28BAAEB21EEE8D8300D4A887 /* Router.swift in Sources */,
+				28BAAEBB1EEE912600D4A887 /* AccelerometerScreenVM.swift in Sources */,
+				28BAAEB91EEE910A00D4A887 /* AccelerometerVC.swift in Sources */,
+				283921561EFD6CBD00C6D73D /* TimeSeriesModelsStorage.swift in Sources */,
+				28BAAEBD1EEEA99500D4A887 /* MainTVC.swift in Sources */,
+				28BAAEC11EEEBAF200D4A887 /* ConnectionPropertyEditingAlertView.swift in Sources */,
+				28BAAEC81EEEE7FE00D4A887 /* DataManagerAPI.swift in Sources */,
+				28BAAECF1EEEE8AA00D4A887 /* ConnectionInfo.swift in Sources */,
+				47D09D681EF2937C0036841D /* NetworkManager.swift in Sources */,
+				28BAAECA1EEEE81800D4A887 /* FileSystemIteractor.swift in Sources */,
+				28BAAED51EF2B3B900D4A887 /* GlobalState.swift in Sources */,
+				28BAAEB41EEE8D9600D4A887 /* StoryboardHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28BAAE8B1EEE8BB900D4A887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28BAAE941EEE8BB900D4A887 /* HSERemoteAccelerometerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28BAAE961EEE8BB900D4A887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28BAAE9F1EEE8BB900D4A887 /* HSERemoteAccelerometerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28BAAE911EEE8BB900D4A887 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28BAAE7A1EEE8BB800D4A887 /* HSERemoteAccelerometer */;
+			targetProxy = 28BAAE901EEE8BB900D4A887 /* PBXContainerItemProxy */;
+		};
+		28BAAE9C1EEE8BB900D4A887 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28BAAE7A1EEE8BB800D4A887 /* HSERemoteAccelerometer */;
+			targetProxy = 28BAAE9B1EEE8BB900D4A887 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28BAAE821EEE8BB800D4A887 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28BAAE831EEE8BB800D4A887 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28BAAE871EEE8BB800D4A887 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28BAAE881EEE8BB800D4A887 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28BAAEA11EEE8BB900D4A887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28BAAEA21EEE8BB900D4A887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28BAAEA41EEE8BB900D4A887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58D50A624F329C09FC85C3AB /* Pods-HSERemoteAccelerometer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CW4GWQZXWG;
+				INFOPLIST_FILE = HSERemoteAccelerometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DT.HSERemoteAccelerometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		28BAAEA51EEE8BB900D4A887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04A914EBFC02582AEB46297B /* Pods-HSERemoteAccelerometer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CW4GWQZXWG;
+				INFOPLIST_FILE = HSERemoteAccelerometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DT.HSERemoteAccelerometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		28BAAEA71EEE8BB900D4A887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E4D7E18716F267E992FE5FE /* Pods-HSERemoteAccelerometerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CW4GWQZXWG;
+				INFOPLIST_FILE = HSERemoteAccelerometerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DT.HSERemoteAccelerometerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HSERemoteAccelerometer.app/HSERemoteAccelerometer";
+			};
+			name = Debug;
+		};
+		28BAAEA81EEE8BB900D4A887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1673889D0598C7F7D3F17B62 /* Pods-HSERemoteAccelerometerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CW4GWQZXWG;
+				INFOPLIST_FILE = HSERemoteAccelerometerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DT.HSERemoteAccelerometerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HSERemoteAccelerometer.app/HSERemoteAccelerometer";
+			};
+			name = Release;
+		};
+		28BAAEAA1EEE8BB900D4A887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94A78F2A2FE3DFCEFACBB77C /* Pods-HSERemoteAccelerometerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = CW4GWQZXWG;
+				INFOPLIST_FILE = HSERemoteAccelerometerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DT.HSERemoteAccelerometerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HSERemoteAccelerometer;
+			};
+			name = Debug;
+		};
+		28BAAEAB1EEE8BB900D4A887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1247BDD6C8ED8A945537FCD5 /* Pods-HSERemoteAccelerometerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = CW4GWQZXWG;
+				INFOPLIST_FILE = HSERemoteAccelerometerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DT.HSERemoteAccelerometerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HSERemoteAccelerometer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28BAAE761EEE8BB800D4A887 /* Build configuration list for PBXProject "HSERemoteAccelerometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28BAAEA11EEE8BB900D4A887 /* Debug */,
+				28BAAEA21EEE8BB900D4A887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28BAAEA31EEE8BB900D4A887 /* Build configuration list for PBXNativeTarget "HSERemoteAccelerometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28BAAEA41EEE8BB900D4A887 /* Debug */,
+				28BAAEA51EEE8BB900D4A887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28BAAEA61EEE8BB900D4A887 /* Build configuration list for PBXNativeTarget "HSERemoteAccelerometerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28BAAEA71EEE8BB900D4A887 /* Debug */,
+				28BAAEA81EEE8BB900D4A887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28BAAEA91EEE8BB900D4A887 /* Build configuration list for PBXNativeTarget "HSERemoteAccelerometerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28BAAEAA1EEE8BB900D4A887 /* Debug */,
+				28BAAEAB1EEE8BB900D4A887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28BAAE731EEE8BB800D4A887 /* Project object */;
+}

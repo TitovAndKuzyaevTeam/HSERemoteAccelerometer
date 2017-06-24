@@ -1,0 +1,6 @@
+framework module Pods_HSERemoteAccelerometerTests {
+  umbrella header "Pods-HSERemoteAccelerometerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

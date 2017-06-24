@@ -1,0 +1,6 @@
+framework module DTAlertViewContainer {
+  umbrella header "DTAlertViewContainer-umbrella.h"
+
+  export *
+  module * { export * }
+}

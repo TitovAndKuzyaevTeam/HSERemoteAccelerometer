@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4B0DAAD8D35C15375E9D18E4CD480F1C7F704C66" : 9223372036854775807,
+    "F5A264D77D6472779AA4D921E5FEB65661DBE457" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "57A64535-B72F-44A9-AD8C-A56EA35719F0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4B0DAAD8D35C15375E9D18E4CD480F1C7F704C66" : "..\/..\/Documents\/Libraries\/DTAlertViewContainer",
+    "F5A264D77D6472779AA4D921E5FEB65661DBE457" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HSERemoteAccelerometer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HSERemoteAccelerometer.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Quott\/DTAlertViewContainer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4B0DAAD8D35C15375E9D18E4CD480F1C7F704C66"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/contacts-app-team\/hseremoteaccelerometer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F5A264D77D6472779AA4D921E5FEB65661DBE457"
+    }
+  ]
+}

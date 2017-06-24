@@ -1,0 +1,188 @@
+//
+//  AccelerometerVC.swift
+//  HSERemoteAccelerometer
+//
+//  Created by Dmitrii Titov on 12.06.17.
+//  Copyright © 2017 Dmitriy Titov. All rights reserved.
+//
+
+import UIKit
+import CoreMotion
+import RxSwift
+<<<<<<< 6773d879a983a9da5772c97f776b36c73aea9ce3
+import Charts
+=======
+import RxCocoa
+>>>>>>> timer
+
+class AccelerometerVC: UITableViewController {
+    
+    let disposeBag = DisposeBag()
+    
+    @IBOutlet weak var labelAccelX: UILabel!
+    @IBOutlet weak var labelAccelY: UILabel!
+    @IBOutlet weak var labelAccelZ: UILabel!
+    @IBOutlet weak var labelGyroX: UILabel!
+    @IBOutlet weak var labelGyroY: UILabel!
+    @IBOutlet weak var labelGyroZ: UILabel!
+    
+    @IBOutlet weak var timeToSendProgressView: UIProgressView!
+    @IBOutlet weak var timeToSendSlider: UISlider!
+    @IBOutlet weak var lineChartView: LineChartView!
+    
+    private let motionManager = CMMotionManager()
+    
+    let vm = AccelerometerScreenVM()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    private func setup() {
+        
+        setupAccelerometer()
+        setupGyroscope()
+        self.setupUI()
+        self.initBindings()
+    }
+    
+    func setupUI() {
+        timeToSendSlider.setValue(Float(vm.connectionInfo.value.sendFrequency), animated: true)
+<<<<<<< 6773d879a983a9da5772c97f776b36c73aea9ce3
+        //timeToSendProgressView.progress =
+        setupChart()
+=======
+    }
+    
+    func initBindings() {
+        
+        _ = timeToSendSlider.rx.value
+            .filter({ DataManagerAPI.shared.updateSendFrequency(sendFrequency: CGFloat($0)) })
+            .map({ Double($0) })
+            .bind(to: GlobalState.shared.sendingFrequency)
+            .addDisposableTo(disposeBag)
+        
+        _ = GlobalState.shared.timeToSendPercentage.asObservable()
+            .subscribeOn(MainScheduler.instance)
+            .subscribe(onNext: { (timeToSendPercentage) in
+                self.timeToSendProgressView.setProgress(Float(timeToSendPercentage), animated: false)
+            })
+            .addDisposableTo(disposeBag)
+>>>>>>> timer
+        
+    }
+    
+    private func setupAccelerometer() {
+        
+        motionManager.accelerometerUpdateInterval = 0.1
+        
+        if motionManager.isAccelerometerAvailable {
+            
+            let queue = OperationQueue()
+            
+            motionManager.startAccelerometerUpdates(to: queue, withHandler: { (data, error) in
+                
+                if error == nil {
+                    if let accelData = data {
+                        //print("Accelerometer: X = \(accelData.acceleration.x), Y = \(accelData.acceleration.y), Z = \(accelData.acceleration.z)")
+                        
+                        DispatchQueue.main.async { [unowned self] in
+                            self.labelAccelX.text = String(format: "%.2f", accelData.acceleration.x)
+                            self.labelAccelY.text = String(format: "%.2f", accelData.acceleration.y)
+                            self.labelAccelZ.text = String(format: "%.2f", accelData.acceleration.z)
+                        }
+                        
+                    } else {
+                        print("Accelerometer Data Error")
+                    }
+                } else {
+                    print("Error \(error!.localizedDescription)")
+                }
+                
+            })
+            
+        } else {
+            
+            // Show alert
+            
+        }
+    }
+    
+    private func setupGyroscope() {
+        
+        motionManager.gyroUpdateInterval = 0.1
+        
+        if motionManager.isGyroAvailable {
+            
+            let queue = OperationQueue()
+            
+            motionManager.startGyroUpdates(to: queue, withHandler: { (data, error) in
+                
+                if error == nil {
+                    if let gyroData = data {
+                        //print("Gyroscope: X = \(gyroData.rotationRate.x), Y = \(gyroData.rotationRate.y), Z = \(gyroData.rotationRate.z)")
+                        
+                        DispatchQueue.main.async { [unowned self] in
+                            self.labelGyroX.text = String(format: "%.2f", gyroData.rotationRate.x)
+                            self.labelGyroY.text = String(format: "%.2f", gyroData.rotationRate.y)
+                            self.labelGyroZ.text = String(format: "%.2f", gyroData.rotationRate.z)
+                        }
+                        
+                    } else {
+                        print("Gyroscope Data Error")
+                    }
+                } else {
+                    print("Error \(error!.localizedDescription)")
+                }
+                
+            })
+            
+        } else {
+            
+            // Show alert
+            
+        }
+    }
+    
+    private func setupChart() {
+        
+        lineChartView.noDataText = "Ожидание данных"
+        
+        let dataPoints = ["12:00", "13:00", "14:00"]
+        let unitsSold = [20.0, 4.0, 6.0]
+        
+        var dataEntries: [ChartDataEntry] = []
+        
+        for i in 0..<dataPoints.count {
+            let dataEntry = ChartDataEntry(x: Double(i), y: unitsSold[i])
+            dataEntries.append(dataEntry)
+        }
+        
+        let chartDataAccelX = LineChartDataSet(values: dataEntries, label: "AccelX")
+        let chartDataAccelY = LineChartDataSet(values: dataEntries, label: "AccelX")
+        let chartDataAccelZ = LineChartDataSet(values: dataEntries, label: "AccelX")
+        let chartDataGyroX = LineChartDataSet(values: dataEntries, label: "AccelX")
+        let chartDataGyroY = LineChartDataSet(values: dataEntries, label: "AccelX")
+        let chartDataGyroZ = LineChartDataSet(values: dataEntries, label: "AccelX")
+
+        let chartData = LineChartData(dataSets: [chartDataAccelX])
+        
+        lineChartView.data = chartData
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    @objc func timerIteraction() {
+        
+    }
+    
+}
