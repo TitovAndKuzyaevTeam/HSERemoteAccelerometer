@@ -1,6 +1,7 @@
 # HSERemoteAccelerometer
 This app simply gets devise's Accelerometer and Gyroscope data and push them to the remote database.
 App let you interact with your own DB. Just configure the id address
+
 ---
 ## Installation
 [App in AppStore](https://appsto.re/ru/etlMkb.i)
